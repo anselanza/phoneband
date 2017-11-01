@@ -3,6 +3,8 @@ const app = express()
 const multer  = require('multer')
 const path = require('path')
 
+const PORT = 3001
+
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
      cb(null, 'server/uploads/')
@@ -18,8 +20,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.listen(3000, () => {
-  console.log('Example app listening on port 3000!')
+app.listen(PORT, () => {
+  console.log('Example app listening on port', PORT);
 })
 
 app.post('/upload', upload.single('sample'), (req, res, next) => {
