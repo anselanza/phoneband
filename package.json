@@ -1,0 +1,19 @@
+{
+  "name": "phoneband",
+  "version": "0.1.0",
+  "description": "Make music in the browser with one or more phones",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anselanza/phoneband.git"
+  },
+  "author": "Stephen Buchanan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anselanza/phoneband/issues"
+  },
+  "homepage": "https://github.com/anselanza/phoneband#readme"
+}
