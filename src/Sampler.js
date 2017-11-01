@@ -1,5 +1,6 @@
 import React from 'react';
 import { ReactMic } from 'react-mic';
+import axios from 'axios';
 
 class Sampler extends React.Component {
 
@@ -25,6 +26,12 @@ class Sampler extends React.Component {
 
   onStop(recordedBlob) {
     console.log('recordedBlob is: ', recordedBlob);
+    let formData = new FormData();
+
+    formData.append("sample", new File([recordedBlob.blob], "sample.webm", { type: "audio/webm;codecs=opus" }));
+    // formData.append("sample", recordedBlob);
+    axios.post("http://localhost:3001/upload", formData);
+
   }
 
   render() {
