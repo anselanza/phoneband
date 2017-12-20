@@ -19,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/anselanza/phoneband/issues"
   },
-  "homepage": "https://github.com/anselanza/phoneband#readme",
   "dependencies": {
     "axios": "^0.17.0",
     "express": "^4.16.2",

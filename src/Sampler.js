@@ -29,8 +29,7 @@ class Sampler extends React.Component {
     let formData = new FormData();
 
     formData.append("sample", new File([recordedBlob.blob], "sample.webm", { type: "audio/webm;codecs=opus" }));
-    // formData.append("sample", recordedBlob);
-    axios.post("http://localhost:3001/upload", formData);
+    axios.post("/upload", formData);
 
   }
 
@@ -38,11 +37,12 @@ class Sampler extends React.Component {
     return (
       <div>
       <ReactMic
-      record={this.state.record}
-      className="sound-wave"
-      onStop={this.onStop}
-      strokeColor="#000000"
-      backgroundColor="#FF4081" />
+        record={this.state.record}
+        className="sound-wave"
+        onStop={this.onStop}
+        strokeColor="#000000"
+        backgroundColor="#FF4081"
+      />
       <button onClick={this.startRecording} type="button">Start</button>
       <button onClick={this.stopRecording} type="button">Stop</button>
       </div>
