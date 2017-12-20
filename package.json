@@ -4,8 +4,8 @@
   "description": "Make music in the browser with one or more phones",
   "main": "server/server.js",
   "scripts": {
-    "dev": "npx nodemon server/server.js --nostatic & react-scripts start",
-    "start": "react-scripts start",
+    "dev": "npx nodemon server/server.js & react-scripts start",
+    "start": "node server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
