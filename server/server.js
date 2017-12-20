@@ -3,7 +3,7 @@ const app = express()
 const multer  = require('multer')
 const path = require('path')
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001;
 
 app.use(express.static('build'))
 
