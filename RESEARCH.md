@@ -1,7 +1,7 @@
 # TODOs
 * <del>Basic recording and upload sound file</del>
 * Test recording on mobile browser (currently working on Desktop)
-* postinstall script in `package.json` to automatically build static assets on deployment as per https://devcenter.heroku.com/articles/node-best-practices
+* <del>postinstall script in `package.json` to automatically build static assets on deployment as per https://devcenter.heroku.com/articles/node-best-practices</del>
 * Play audio back from server on a different page
 * Load audio clip into Sonos framework and manipulate
 
